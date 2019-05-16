@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+.nextimg {
+  position: fixed;
+  left:1175px;
+  top:110px;
+  transform: rotate(-30deg);
+  height:300px;
+  weight:200px;
+  opacity: 0.3;
+  z-index: -1;
+
+}
+.previmg {
+  position: fixed;
+  top:110px;
+  left:90px;
+  height:300px;
+  weight:200px;
+  opacity: 0.3;
+  z-index: -1;
+  transform: rotate(30deg);
+
+}
+.costyl {
+  position: fixed;
+  left: 530px;
+  top: 220px;
+}

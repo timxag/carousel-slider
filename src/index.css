@@ -1,0 +1,18 @@
+
+button {
+  padding-left:240px;
+  
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background: rgb(22, 59, 18); /* фон кнопки */
+  padding: .7em 1.5em; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */
+} 
+button:hover { background: rgb(110, 201, 74); } /* при наведении курсора мышки */
+button:active { background: rgb(73, 152, 0); } /* при нажатии */
+.curimg {
+  height:360px;
+  weight:240px;
+  z-index: 100;
+}
