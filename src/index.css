@@ -2,17 +2,55 @@
 button {
   padding-left:240px;
   
-  color: #fff; /* цвет текста */
-  text-decoration: none; /* убирать подчёркивание у ссылок */
-  user-select: none; /* убирать выделение текста */
-  background: rgb(22, 59, 18); /* фон кнопки */
-  padding: .7em 1.5em; /* отступ от текста */
-  outline: none; /* убирать контур в Mozilla */
+  color: #fff; 
+  text-decoration: none; 
+  user-select: none; 
+  background: rgb(22, 59, 18); 
+  padding: .7em 1.5em; 
+  outline: none; 
 } 
-button:hover { background: rgb(110, 201, 74); } /* при наведении курсора мышки */
-button:active { background: rgb(73, 152, 0); } /* при нажатии */
+
+
+button:hover { background: rgb(110, 201, 74); } 
+button:active { background: rgb(73, 152, 0); } 
 .curimg {
   height:360px;
   weight:240px;
   z-index: 100;
+}
+input[type=text] {
+  width: 15%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 4px;
+}
+.form {
+  margin-left: 15%;
+}
+img[tabindex="0"] {
+  cursor: zoom-in;
+}
+img[tabindex="0"]:focus {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+  max-width: 99%;
+  max-height: 99%;
+  margin: auto;
+  box-shadow: 0 0 20px #000, 0 0 0 1000px rgba(210,210,210,.4);
+}
+img[tabindex="0"]:focus,  
+img[tabindex="0"]:focus ~ * {
+  pointer-events: none;
+  cursor: zoom-out;
 }
